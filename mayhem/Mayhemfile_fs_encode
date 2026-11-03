@@ -1,0 +1,10 @@
+project: savantenvs/freeswitch
+target: fs-encode
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fs-encode/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_fs_encode
+    libfuzzer: true
+    timeout: 30

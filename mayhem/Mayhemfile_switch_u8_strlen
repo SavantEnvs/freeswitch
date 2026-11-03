@@ -1,0 +1,6 @@
+project: savantenvs/freeswitch
+target: switch-u8-strlen
+
+cmds:
+  - cmd: /mayhem/fuzz_switch_u8_strlen
+    libfuzzer: true

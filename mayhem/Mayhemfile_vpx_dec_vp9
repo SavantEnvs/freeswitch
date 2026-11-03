@@ -1,0 +1,7 @@
+project: savantenvs/freeswitch
+target: vpx-dec-vp9
+
+cmds:
+  - cmd: /mayhem/vpx_dec_fuzzer_vp9
+    libfuzzer: true
+    timeout: 30
