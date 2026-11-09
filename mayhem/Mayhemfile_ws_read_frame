@@ -1,0 +1,10 @@
+project: savantenvs/freeswitch
+target: ws-read-frame-mined-a047b7a
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ws-read-frame-mined-a047b7a/testsuite
+
+cmds:
+  - cmd: /mayhem/fuzz_ws_read_frame
+    libfuzzer: true
+    timeout: 30
